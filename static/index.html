@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Submission Form</title>
+</head>
+<body>
+  <h1>Submit a Job</h1>
+  <img src="images/thumbsUp.jpeg">
+  <form action="http://localhost:8080/enqueue" method="POST">
+    <label for="payload">Payload:</label>
+    <input type="text" id="payload" name="payload" required>
+    <br><br>
+
+    <label for="jobType">Job Type:</label>
+    <select id="jobType" name="jobType">
+      <option value="default">Default</option>
+      <option value="encrypt">Encrypt</option>
+      <option value="compress">Compress</option>
+      <option value="hash">Hash</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Submit Job</button>
+  </form>
+</body>
+</html>
