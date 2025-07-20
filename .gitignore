@@ -1,0 +1,18 @@
+# Go build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# macOS system files
+.DS_Store
+
+# IDE folders
+.vscode/
+.idea/
+
+# Optional: Go vendored modules
+vendor/
+
